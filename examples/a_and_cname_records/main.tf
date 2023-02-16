@@ -7,7 +7,7 @@ terraform {
 }
 
 provider "pihole" {
-  url = "<PIHOLE_URL>"
+  url       = "<PIHOLE_URL>"
   api_token = "<PIHOLE_API_TOKEN>"
 }
 
@@ -25,12 +25,12 @@ module "pihole_internal_dns" {
   ]
   cname_records = [
     {
-        domain = "cnamerecord1"
-        target = "cname.example.com"
+      domain = "cnamerecord1"
+      target = "cname.example.com"
     },
-{
-        domain = "cnamerecord2"
-        target = "arecord2.example.com"
+    {
+      domain = "cnamerecord2"
+      target = "arecord2.example.com"
     }
   ]
 }
