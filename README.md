@@ -1,6 +1,24 @@
 # terraform-pihole-dns
 Terraform module for PiHole local dns records
 
+## Provider Configuration
+
+The `PiHole` provider must be configured. This can be done by setting the following environment variables:
+
+* `PIHOLE_URL` - URL of your PiHole server.
+* `PIHOLE_API_TOKEN` - API Token for you PiHole admin user.
+
+This module was NOT tested using the `PIHOLE_PASSWORD` authentication option. It may or may not work as expected.
+
+You can also configure the provider with a `provider` block like this:
+
+```terraform
+provider "pihole" {
+  url       = "<PIHOLE_URL>"
+  api_token = "<PIHOLE_API_TOKEN>"
+}
+```
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
