@@ -24,13 +24,13 @@ provider "pihole" {
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_pihole"></a> [pihole](#requirement\_pihole) | ~> 0.0.12 |
+| <a name="requirement_pihole"></a> [pihole](#requirement\_pihole) | >= 0.2.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_pihole"></a> [pihole](#provider\_pihole) | 0.0.12 |
+| <a name="provider_pihole"></a> [pihole](#provider\_pihole) | >= 0.2.0 |
 
 ## Modules
 
